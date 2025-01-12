@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Dungeon Masters Survival</title>
+    <title>Unity Web Player | Drift</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=320 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=360 height=640 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Dungeon Masters Survival</div>
+        <div id="unity-build-title">Drift</div>
       </div>
     </div>
     <script>
@@ -52,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/39c50ec5a7b10b9cfdf2ea8386f5885f.loader.js";
+      var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/5d36f11080fc01639e27b0e14a1eda0f.data",
-        frameworkUrl: buildUrl + "/d259b9b871f52f7161fadcb719024533.framework.js",
-        codeUrl: buildUrl + "/7f88b836b5a21d118e864c90e0149f6f.wasm",
+        dataUrl: buildUrl + "/Build.data",
+        frameworkUrl: buildUrl + "/Build.framework.js",
+        codeUrl: buildUrl + "/Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Studio Golden Games",
-        productName: "Dungeon Masters Survival",
-        productVersion: "3",
+        companyName: "DefaultCompany",
+        productName: "Drift",
+        productVersion: "1.5.0",
         showBanner: unityShowBanner,
       };
 
@@ -89,8 +89,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "320px";
-        canvas.style.height = "600px";
+        canvas.style.width = "360px";
+        canvas.style.height = "640px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
